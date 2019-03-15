@@ -1,0 +1,15 @@
+2019-01-24 22:59:09.775	 File [e:\sql12_main_t\sql\ntdbms\msql\fulltext\src\search\search\fdexe\fd.cxx] Line 155 Starting msftefd.exe
+2019-01-24 22:59:09.793	 File [e:\sql12_main_t\sql\ntdbms\msql\fulltext\src\search\search\fdexe\fd.cxx] Line 195 argc 12, argv C:\Program Files\Microsoft SQL Server\MSSQL12.PRUEBAS\MSSQL\Binn\fdhost.exe
+2019-01-24 22:59:09.810	 File [e:\sql12_main_t\sql\ntdbms\msql\fulltext\src\search\search\fdexe\fd.cxx] Line 195 argc 12, argv MSSQL12.PRUEBASF059decc6fd6f4f4f55f89c8fbd13515f23d01j41ff
+2019-01-24 22:59:09.813	 File [e:\sql12_main_t\sql\ntdbms\msql\fulltext\src\search\search\fdexe\fd.cxx] Line 195 argc 12, argv MSSQL12.PRUEBAS
+2019-01-24 22:59:09.816	 File [e:\sql12_main_t\sql\ntdbms\msql\fulltext\src\search\search\fdexe\fd.cxx] Line 195 argc 12, argv MSSQL12.PRUEBAS
+2019-01-24 22:59:09.817	 File [e:\sql12_main_t\sql\ntdbms\msql\fulltext\src\search\search\fdexe\fd.cxx] Line 195 argc 12, argv 8
+2019-01-24 22:59:09.819	 File [e:\sql12_main_t\sql\ntdbms\msql\fulltext\src\search\search\fdexe\fd.cxx] Line 195 argc 12, argv 
+2019-01-24 22:59:09.822	 File [e:\sql12_main_t\sql\ntdbms\msql\fulltext\src\search\search\fdexe\fd.cxx] Line 195 argc 12, argv 8192
+2019-01-24 22:59:09.826	 File [e:\sql12_main_t\sql\ntdbms\msql\fulltext\src\search\search\fdexe\fd.cxx] Line 195 argc 12, argv M
+2019-01-24 22:59:09.827	 File [e:\sql12_main_t\sql\ntdbms\msql\fulltext\src\search\search\fdexe\fd.cxx] Line 195 argc 12, argv 0
+2019-01-24 22:59:09.829	 File [e:\sql12_main_t\sql\ntdbms\msql\fulltext\src\search\search\fdexe\fd.cxx] Line 195 argc 12, argv 
+2019-01-24 22:59:09.830	 File [e:\sql12_main_t\sql\ntdbms\msql\fulltext\src\search\search\fdexe\fd.cxx] Line 195 argc 12, argv 
+2019-01-24 22:59:09.831	 File [e:\sql12_main_t\sql\ntdbms\msql\fulltext\src\search\search\fdexe\fd.cxx] Line 195 argc 12, argv 
+2019-01-24 22:59:09.835	 File [e:\sql12_main_t\sql\ntdbms\msql\fulltext\src\search\search\fdexe\fd.cxx] Line 262 msFteFD has started
+2019-01-25 14:18:31.566	 File [e:\sql12_main_t\sql\ntdbms\msql\fulltext\src\search\search\fdexe\fd.cxx] Line 273 FD is shutdown name:MSSQL12.PRUEBASF059decc6fd6f4f4f55f89c8fbd13515f23d01j41ff
