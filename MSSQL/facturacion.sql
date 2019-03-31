@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-03-2019 a las 16:54:47
+-- Tiempo de generación: 31-03-2019 a las 17:45:21
 -- Versión del servidor: 5.7.17
 -- Versión de PHP: 7.1.3
 
@@ -56,6 +56,14 @@ CREATE TABLE `categoria` (
   `Nombre` varchar(50) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `categoria`
+--
+
+INSERT INTO `categoria` (`Id`, `Nombre`) VALUES
+(2, 'Bordaditos'),
+(1, 'Lanas');
+
 -- --------------------------------------------------------
 
 --
@@ -101,6 +109,14 @@ CREATE TABLE `producto` (
   `Imagen` varchar(50) NOT NULL,
   `Id_categoria` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `producto`
+--
+
+INSERT INTO `producto` (`Id`, `Nombre`, `Color`, `Marca`, `Longitud`, `Precio`, `Stock`, `Imagen`, `Id_categoria`) VALUES
+(1, 'bordadodespiderman', 'rojo', 'castor', 2.12, 5.5, 10, 'img/cintas.jpg', 2),
+(2, 'Lana', 'Rojo', 'Ardilla', 5, 25, 50, 'img\\lanarojacastor.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -158,7 +174,41 @@ ALTER TABLE `producto_factura`
   ADD PRIMARY KEY (`id_producto_factura`),
   ADD UNIQUE KEY `id_producto` (`id_producto`),
   ADD UNIQUE KEY `id_factura` (`id_factura`);
-COMMIT;
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `administrador`
+--
+ALTER TABLE `administrador`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT de la tabla `categoria`
+--
+ALTER TABLE `categoria`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT de la tabla `cliente`
+--
+ALTER TABLE `cliente`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT de la tabla `factura`
+--
+ALTER TABLE `factura`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT de la tabla `producto`
+--
+ALTER TABLE `producto`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT de la tabla `producto_factura`
+--
+ALTER TABLE `producto_factura`
+  MODIFY `id_producto_factura` int(11) NOT NULL AUTO_INCREMENT;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
