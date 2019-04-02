@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 31-03-2019 a las 17:45:21
+-- Tiempo de generación: 02-04-2019 a las 18:09:06
 -- Versión del servidor: 5.7.17
 -- Versión de PHP: 7.1.3
 
@@ -61,8 +61,9 @@ CREATE TABLE `categoria` (
 --
 
 INSERT INTO `categoria` (`Id`, `Nombre`) VALUES
-(2, 'Bordaditos'),
-(1, 'Lanas');
+(1, 'Gatos'),
+(2, 'Bordados'),
+(3, 'Botones');
 
 -- --------------------------------------------------------
 
@@ -73,9 +74,19 @@ INSERT INTO `categoria` (`Id`, `Nombre`) VALUES
 CREATE TABLE `cliente` (
   `Id` int(11) NOT NULL,
   `Nit` int(11) NOT NULL,
-  `Nombre` int(11) NOT NULL,
-  `Apellidos` varchar(50) NOT NULL
+  `Nombre` varchar(50) NOT NULL,
+  `Apellidos` varchar(50) NOT NULL,
+  `ApellidoNit` varchar(50) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `cliente`
+--
+
+INSERT INTO `cliente` (`Id`, `Nit`, `Nombre`, `Apellidos`, `ApellidoNit`) VALUES
+(1, 523689512, 'Grover', 'Veizan Mamani', 'Veizan'),
+(2, 856491236, 'Brandon Kevin', 'Triveño Mercado', 'Triveño'),
+(3, 326589521, 'Armando', 'Paredes Loza', 'Paredes');
 
 -- --------------------------------------------------------
 
@@ -107,16 +118,17 @@ CREATE TABLE `producto` (
   `Precio` double NOT NULL,
   `Stock` int(11) NOT NULL,
   `Imagen` varchar(50) NOT NULL,
-  `Id_categoria` int(11) NOT NULL
+  `Id_categoria` int(11) NOT NULL,
+  `Descripcion` varchar(250) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `producto`
 --
 
-INSERT INTO `producto` (`Id`, `Nombre`, `Color`, `Marca`, `Longitud`, `Precio`, `Stock`, `Imagen`, `Id_categoria`) VALUES
-(1, 'bordadodespiderman', 'rojo', 'castor', 2.12, 5.5, 10, 'img/cintas.jpg', 2),
-(2, 'Lana', 'Rojo', 'Ardilla', 5, 25, 50, 'img\\lanarojacastor.jpg', 1);
+INSERT INTO `producto` (`Id`, `Nombre`, `Color`, `Marca`, `Longitud`, `Precio`, `Stock`, `Imagen`, `Id_categoria`, `Descripcion`) VALUES
+(1, 'Virgen', 'verde', 'iglesia', 20, 20, 20, 'img/cintas.jpg', 2, 'Es un hermoso tocado de la virgen'),
+(2, 'Lana', 'Rojo', 'Ardilla', 5, 25, 50, 'img\\lanarojacastor.jpg', 1, 'Lana de tegido para diseno de prendas de vestir');
 
 -- --------------------------------------------------------
 
@@ -188,12 +200,12 @@ ALTER TABLE `administrador`
 -- AUTO_INCREMENT de la tabla `categoria`
 --
 ALTER TABLE `categoria`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT de la tabla `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT de la tabla `factura`
 --
